@@ -22,7 +22,6 @@ This project provides a backend server for a weather dashboard application. It i
 ```bash
   npm install
 ```
-
 3.Set environment variables:
 
 Create a .env file at the root of the project and add the following:
@@ -32,7 +31,14 @@ Create a .env file at the root of the project and add the following:
   SECRET_KEY=YOUR_SECRET_KEY
   WEATHER_API_KEY=YOUR_WEATHER_API_KEY
   ```
-4.Run server
+4.Database Setup
+
+``` 
+  npx prisma migrate dev
+  npx prisma generate
+```
+
+5.Run server
 ```bash
 npm run dev
 ```
